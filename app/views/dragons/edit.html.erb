@@ -1,0 +1,12 @@
+<h1>Dragons#edit</h1>
+
+<% if flash[:error] %>
+    <% flash[:error].each do |e| %>
+        <%= e %>
+        <% end %>
+        <%end%>
+
+<%= render "form" %>
+
+
+<%= button_to "DELETE", @dragon, :method => 'delete' %>

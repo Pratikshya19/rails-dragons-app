@@ -1,0 +1,8 @@
+<h1>Users#show</h1>
+<%= @user.name %>
+<ul>
+<% @user.dragons.each do |dragon| %>
+    <li><%= dragon.name %></li>
+    <%end%>
+</ul>
+

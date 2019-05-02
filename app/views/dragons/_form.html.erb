@@ -1,0 +1,9 @@
+<%= form_for @dragon do |f| %>
+    <%= f.label "NAME" %>
+    <%= f.text_field :name %><br>
+    <%= f.label "Age" %>
+    <%= f.text_field :age %><br>
+    <%= f.label "User ID" %>
+    <%= f.collection_select :user_id, User.all, :id, :name %><br>
+    <%= f.submit %>
+    <%end%>
